@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herban Delivery</title>
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- company logo in browser title -->
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<header class="header1">
+    <nav>
+        <div class="row">
+            <img src="resources/img/logo.png" alt="Omnifood logo" class="logo">
+            <img src="resources/img/logo-dark.png" alt="Omnifood logo" class="logo-dark">
+            <ul class="main-nav">
+                <li><a href="#features">Weed delivery</a></li>
+                <li><a href="#works">How it works</a></li>
+                <li><a href="#cities">Our locations</a></li>
+                <li><a href="#plans">Sign up</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero-text-box">
+        <h1>Goodbye Bunk Weed <br>Hello super dank nug.</h1>
+        <!-- <a class="btn btn-full" href="#plans">I need nug</a> -->
+        <!-- <a class="btn btn-ghost" href="#start">Show me more</a> -->
+        <a class="btn btn-full js--scroll-to-plans" href="#">I need nug</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+    </div>
+
+</header>
+
+<section class="section-features js--features" id="features">
+    <div class="row">
+        <h2>Get <s>high</s> medicated fast</h2>
+        <p class="long-copy">
+            Hello, we're Herban Delivery, your new premium weed delivery service. We know you're always busy. No
+            time for picking up. So let us take care of that, we're really good at it, we promise!
+        </p>
+    </div>
+
+
+    <div class="row">
+        <div class="col span-1-of-4 box">
+            <i class="ion-ios-infinite icon-big"></i>
+            <h3>Up to 365 days/year</h3>
+            <p>
+                Never pick up again! We really mean that. Our subscription plans include up to 365 days/year
+                coverage.
+                You can also choose to order more flexibly if that's your style.
+            </p>
+        </div>
+        <div class="col span-1-of-4 box">
+            <i class="ion-ios-stopwatch icon-big"></i>
+            <h3>Ready in 20 minutes</h3>
+            <p>
+                You're only twenty minutes away from your dank and organic meds delivered right to your
+                home. We work with the best growers in each town to ensure that you're 100% happy.
+            </p>
+        </div>
+        <div class="col span-1-of-4 box" id="weed-icon">
+            <!-- <i class="ion-ios-nutrition-outline icon-big"></i> -->
+            <img src="resources/img/cannabis.png">
+            <!-- <img
+                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjY0cHgiIHZpZXdCb3g9IjAgMCA1MTEuOTk5MTYgNTExIiB3aWR0aD0iNjRweCI+PHBhdGggZD0ibTI1NiA1MTAuNTU0Njg4Yy00LjI2NTYyNSAwLTcuNzI2NTYyLTMuNDU3MDMyLTcuNzI2NTYyLTcuNzI2NTYzdi0xMDEuMDYyNWMwLTQuMjY5NTMxIDMuNDU3MDMxLTcuNzI2NTYzIDcuNzI2NTYyLTcuNzI2NTYzIDQuMjY1NjI1IDAgNy43MjY1NjIgMy40NTcwMzIgNy43MjY1NjIgNy43MjY1NjN2MTAxLjA2MjVjMCA0LjI2OTUzMS0zLjQ2MDkzNyA3LjcyNjU2My03LjcyNjU2MiA3LjcyNjU2M3ptMCAwIiBmaWxsPSIjNmM5YjFiIi8+PHBhdGggZD0ibTUwOS41OTM3NSAzMzAuMzY3MTg4Yy04OS4xMzI4MTItMTUuNTk3NjU3LTEwMS4xNjAxNTYtMjEuMTUyMzQ0LTE3MS41MTU2MjUtMy41NTA3ODItMy4xMDkzNzUuNzc3MzQ0LTUuMDAzOTA2LTMuMzA0Njg3LTIuNDAyMzQ0LTUuMTc1NzgxIDM4LjM3NS0yNy42MjUgOTYuOTAyMzQ0LTYyLjkxNDA2MyAxMjcuMzg2NzE5LTE0OS4yMzA0NjlsMjUuMTYwMTU2LTcxLjI0NjA5NGMuOTI1NzgyLTIuNjI1LTIuMDExNzE4LTQuOTI1NzgxLTQuMzM1OTM3LTMuMzk0NTMxbC05MC4zMjgxMjUgNTkuNDQ1MzEzYy0yNS40NDE0MDYgMTYuNzQyMTg3LTQ2Ljg1OTM3NSAzOC45MDIzNDQtNjIuNzI2NTYzIDY0Ljg5NDUzMWwtMzQuMDkzNzUgNTUuODQ3NjU2Yy0xLjcwNzAzMSAyLjc5Mjk2OS02LjAwNzgxMiAxLjA3MDMxMy01LjMyMDMxMi0yLjEyNWw0LjczMDQ2OS0yMS45NjA5MzdjMjYuMTEzMjgxLTEyMS4yNS0xNy43NS0yMDYuMzI0MjE5LTM3LjQ4ODI4Mi0yNTEuNjI1LTEuMDExNzE4LTIuMzI0MjE5LTQuMzEyNS0yLjMyNDIxOS01LjMyNDIxOCAwLTE4LjY5MTQwNyA0Mi45MDIzNDQtNjMuOTAyMzQ0IDEyOC45ODA0NjgtMzcuNDg0Mzc2IDI1MS42MjVsNC43MjY1NjMgMjEuOTYwOTM3Yy42OTE0MDYgMy4xOTkyMTktMy42MTMyODEgNC45MTc5NjktNS4zMjAzMTMgMi4xMjVsLTM0LjA4OTg0My01NS44NDc2NTZjLTE1Ljg3MTA5NC0yNS45OTIxODctMzcuMjg5MDYzLTQ4LjE1MjM0NC02Mi43MjY1NjMtNjQuODk0NTMxbC05MC4zMjgxMjUtNTkuNDQ1MzEzYy0yLjMyODEyNS0xLjUzMTI1LTUuMjY1NjI1Ljc2OTUzMS00LjMzNTkzNyAzLjM5NDUzMWwyNS4xNjAxNTYgNzEuMjQ2MDk0YzE3LjczODI4MSA1MC4yMzA0NjkgNTAuNDE3OTY5IDkzLjgyODEyNSA5My42NTIzNDQgMTI0Ljk0OTIxOWwzMy43MzQzNzUgMjQuMjgxMjVjMi41OTc2NTYgMS44NzEwOTQuNzAzMTI1IDUuOTUzMTI1LTIuNDAyMzQ0IDUuMTc1NzgxbC0xNi41MTU2MjUtNC4xMzI4MTJjLTU1Ljg4NjcxOS0xMy45ODA0NjktOTIuOTY4NzUtMy4xNzE4NzUtMTU1IDcuNjgzNTk0LTIuNTc4MTI1LjQ1MzEyNC0zLjI5Mjk2OSAzLjgxMjUtMS4xMjEwOTQgNS4yNzM0MzdsNDYuMTA1NDY5IDMxLjAwMzkwNmMzMC44NzEwOTQgMjAuNzYxNzE5IDY3LjM1MTU2MyAzMS41ODIwMzEgMTA0LjU1MDc4MSAzMS4wMTE3MTlsNDIuNDE0MDYzLS42NTIzNDRjMy4xNDg0MzctLjA0Njg3NSA0LjExMzI4MSA0LjI0NjA5NCAxLjI0NjA5MyA1LjU1MDc4Mi0zMS45NzI2NTYgMTQuNTMxMjUtNTQuMDU4NTkzIDIyLjgwODU5My04MC44NzEwOTMgNDcuODY3MTg3bC0zMS4wNDI5NjkgMjkuMDExNzE5Yy0yLjE4MzU5NCAyLjAzOTA2Mi0uMjM4MjgxIDUuNjQ4NDM3IDIuNjY3OTY5IDQuOTQ1MzEybDQ3LjI4NTE1Ni0xMS40NzI2NTZjNDguNzkyOTY5LTExLjgzNTkzOCA3My4xMzY3MTktMzMuNTIzNDM4IDEyMC42NTYyNS02Ny45MDIzNDQuNTA3ODEzLS4zNjcxODcgMS4xMDU0NjktLjU1MDc4MSAxLjcwMzEyNS0uNTUwNzgxczEuMTk1MzEyLjE4MzU5NCAxLjcwMzEyNS41NTA3ODFjODUuNTkzNzUgNjEuOTE3OTY5IDc2LjkzMzU5NCA1Ny4yOTY4NzUgMTY3Ljk0MTQwNiA3OS4zNzUgMi45MDYyNS43MDMxMjUgNC44NTE1NjMtMi45MDYyNSAyLjY3MTg3NS00Ljk0NTMxMi01My4zNDc2NTYtNDkuODU1NDY5LTQ4Ljg3NS00OC4yMjI2NTYtMTExLjkxNzk2OC03Ni44Nzg5MDYtMi44NjcxODgtMS4zMDQ2ODgtMS45MDIzNDQtNS41OTc2NTcgMS4yNDYwOTMtNS41NTA3ODJsNDIuNDE0MDYzLjY1MjM0NGMzNy4xOTkyMTguNTcwMzEyIDczLjY3OTY4Ny0xMC4yNSAxMDQuNTUwNzgxLTMxLjAxMTcxOWw0Ni4xMDU0NjktMzEuMDAzOTA2YzIuMTY3OTY4LTEuNDYwOTM3IDEuNDU3MDMxLTQuODIwMzEzLTEuMTIxMDk0LTUuMjczNDM3em0wIDAiIGZpbGw9IiM3ZmJiMzciLz48ZyBmaWxsPSIjNmM5YjFiIj48cGF0aCBkPSJtMzcwLjk1MzEyNSAzOTcuNDk2MDk0Yy0zNC4wNzAzMTMtLjUyNzM0NC0zMi4yODEyNS0uNjgzNTk0LTMzLjI3NzM0NC0uMTgzNTk0IDI0LjI1LjM3MTA5NCAyNi4zMzU5MzguNDg4MjgxIDMzLjI3NzM0NC4xODM1OTR6bTAgMCIvPjxwYXRoIGQ9Im0xMTIuNTM5MDYyIDM5My45NTcwMzFjLTMwLjA3MDMxMi0xMS4xMjUtNDMuMDU4NTkzLTIzLjEzMjgxMi05My4wMDc4MTItNjAuOTg0Mzc1LTEuODgyODEyLTEuNDI1NzgxLTEuNjM2NzE5LTQuNDE3OTY4LjA4MjAzMS01LjYxNzE4N2wtMTcuMjA3MDMxIDMuMDExNzE5Yy0yLjU3ODEyNS40NTMxMjQtMy4yOTI5NjkgMy44MTI1LTEuMTIxMDk0IDUuMjczNDM3IDQ2Ljc4OTA2MyAzMS40NjQ4NDQgNjguMjQyMTg4IDQ5LjUwMzkwNiAxMTEuMjUzOTA2IDU4LjMxNjQwNnptMCAwIi8+PHBhdGggZD0ibTE3My44Mzk4NDQgMzA0LjQ0NTMxMi05Ljg0NzY1Ni03LjA4NTkzN2MtNDMuMjM0Mzc2LTMxLjEyMTA5NC03NS45MTQwNjMtNzQuNzE4NzUtOTMuNjUyMzQ0LTEyNC45NDkyMTlsLTIxLjU1ODU5NC02MS4wMzkwNjItMjAuNjY3OTY5LTEzLjYwMTU2M2MtMi4zMjgxMjUtMS41MzEyNS01LjI2NTYyNS43Njk1MzEtNC4zMzk4NDMgMy4zOTQ1MzFsMjUuMTY0MDYyIDcxLjI0NjA5NGMxNy43MzgyODEgNTAuMjMwNDY5IDUwLjQxNzk2OSA5My44MjgxMjUgOTMuNjUyMzQ0IDEyNC45NDkyMTlsMzMuNzM0Mzc1IDI0LjI4MTI1Yy4yNS4xNzk2ODcuNDQ1MzEyLjM4NjcxOS42MTcxODcuNjAxNTYzIDMuOTc2NTYzLTUuNzg5MDYzIDIuNTk3NjU2LTEzLjY5MTQwNy0zLjEwMTU2Mi0xNy43OTY4NzZ6bTAgMCIvPjxwYXRoIGQ9Im0yMTUuODUxNTYyIDI1My44NjcxODggNC43MzA0NjkgMjEuOTYwOTM3IDkuNjk5MjE5LTIuMjg5MDYzYzUuOTI1NzgxLTEuMzk4NDM3IDkuNjQwNjI1LTcuMjc3MzQzIDguMzU5Mzc1LTEzLjIzMDQ2OGwtMS4zODY3MTktNi40NDE0MDZjLTE1LjUxOTUzMS03Mi4wNDI5NjktOC4wMzEyNS0xNDcuMTQ0NTMyIDIxLjQwMjM0NC0yMTQuNzEwOTM4bDguMDQyOTY5LTE4LjQ2MDkzOGMtNC44Nzg5MDctMTEuMjA3MDMxLTMuMTU2MjUtNy4yNDYwOTMtOC4wMzUxNTctMTguNDQ5MjE4LTEuMDExNzE4LTIuMzI0MjE5LTQuMzEyNS0yLjMzMjAzMTUtNS4zMjgxMjQgMC0xOC42OTkyMTkgNDIuOTIxODc1LTYzLjg5ODQzOCAxMjguOTkyMTg3LTM3LjQ4NDM3NiAyNTEuNjIxMDk0em0wIDAiLz48cGF0aCBkPSJtMjA2LjY2Nzk2OSA0MDEuOTQ1MzEyYy0uNzYxNzE5LTIuODEyNS0zLjMzMjAzMS00Ljc1LTYuMjQ2MDk0LTQuNzA3MDMxbC00LjY5OTIxOS4wNzQyMTljMS45ODgyODIuOTkyMTg4IDIuMjY5NTMyIDQuMTUyMzQ0LS4xMjEwOTQgNS4yMzgyODEtMzEuOTcyNjU2IDE0LjUzNTE1Ny01NC4wNTg1OTMgMjIuODA4NTk0LTgwLjg3MTA5MyA0Ny44NjcxODhsLTMxLjA0Mjk2OSAyOS4wMTU2MjVjLTIuMTgzNTk0IDIuMDM5MDYyLS4yMzgyODEgNS42NDg0MzcgMi42Njc5NjkgNC45NDUzMTJsMTguMzA0Njg3LTQuNDQxNDA2Yy4xMjEwOTQtLjE3NTc4MS4yNTc4MTMtLjM0NzY1Ni40MjU3ODItLjUwMzkwNmwzMS4wNDY4NzQtMjkuMDE1NjI1YzIyLjg2NzE4OC0yMS4zNzEwOTQgNDIuMzA0Njg4LTMwLjUzOTA2MyA2Ny4zNjcxODgtNDEuNzg5MDYzIDIuNTUwNzgxLTEuMTQ0NTMxIDMuODk4NDM4LTMuOTgwNDY4IDMuMTY3OTY5LTYuNjgzNTk0em0wIDAiLz48cGF0aCBkPSJtNDI4Ljc0MjE4OCA0NzkuOTM3NWMtNTUuODgyODEzLTEzLjU1NDY4OC02NC42ODM1OTQtMTIuODA4NTk0LTE1NC40Njg3NS03OC42NzE4NzUtNi40NzY1NjMtNC43MzgyODEtMTMuOTk2MDk0IDEuMzYzMjgxLTE2LjAzNTE1NyAzLjIyNjU2My0uMTY3OTY5LjE5NTMxMi0uMzQ3NjU2LjM3MTA5My0uNTM1MTU2LjUxMTcxOCA4NS41ODk4NDQgNjEuOTE3OTY5IDc2LjkzMzU5NCA1Ny4yOTY4NzUgMTY3Ljk0MTQwNiA3OS4zNzUgMi42Nzk2ODguNjUyMzQ0IDQuNTMxMjUtMi4zNzEwOTQgMy4wOTc2NTctNC40NDE0MDZ6bTAgMCIvPjxwYXRoIGQ9Im0yOTYuNzM4MjgxIDI3Ny45NTMxMjUgNS4zOTA2MjUgMy4xMjg5MDZjNS44MjAzMTMgMy4zNzUgMTMuMjY1NjI1IDEuNDY0ODQ0IDE2LjczODI4Mi00LjI5Mjk2OSAzLjU0Mjk2OC01Ljg3MTA5MyAxMC45Njg3NS0xNy45OTIxODcgMzMuMzYzMjgxLTU0LjY3OTY4NyAxNS44NzEwOTMtMjUuOTkyMTg3IDM3LjI4OTA2Mi00OC4xNTIzNDQgNjIuNzI2NTYyLTY0Ljg5MDYyNWw2OS42NjAxNTctNDUuODQzNzUgMy42MDU0NjgtMTAuMjEwOTM4Yy44OTQ1MzItMi41MzUxNTYtMS44MTI1LTQuNzUzOTA2LTQuMDkzNzUtMy41MjczNDMtLjA4MjAzMS4wNDI5NjktLjE2NDA2Mi4wODIwMzEtLjI0MjE4Ny4xMzI4MTItMTM3LjE0ODQzOCA5MC4yNTc4MTMtMTIwLjcxNDg0NCA3MS4zNjcxODgtMTg3LjE0ODQzOCAxODAuMTgzNTk0em0wIDAiLz48L2c+PC9zdmc+Cg==" /> -->
+            <h3>100% organic</h3>
+            <p>
+                All of our weed is fresh, organic and local. Our weed is grown without pesticides or
+                GMO's. Good for your health, the environment, and also vegan-friendly!
+            </p>
+        </div>
+        <div class="col span-1-of-4 box">
+            <i class="ion-ios-cart icon-big"></i>
+            <h3>Order anything</h3>
+            <p>
+                We don't limit your needs, which means you can order whatever you feel like. You can
+                choose from our menu containing over 50 types of nug. It's up to you!
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section-nugs">
+    <ul class="nugs-showcase clearfix">
+        <li>
+            <figure class="nug-photo">
+                <img src="resources/img/1.jpg" alt="Nug">
+            </figure>
+        </li>
+        <li>
+            <figure class="nug-photo">
+                <img src="resources/img/2.jpg" alt="Nug">
+            </figure>
+        </li>
+        <li>
+            <figure class="nug-photo">
+                <img src="resources/img/3.jpg" alt="Nug">
+            </figure>
+        </li>
+        <li>
+            <figure class="nug-photo">
+                <img src="resources/img/4.jpg" alt="Nug">
+            </figure>
+        </li>
+    </ul>
+    <ul class="nugs-showcase clearfix">
+        <li>
+            <figure class="nug-photo">
+                <img src="resources/img/5.jpg" alt="Nug">
+            </figure>
+        </li>
+        <li>
+            <figure class="nug-photo">
+                <img src="resources/img/6.jpg" alt="Nug">
+            </figure>
+        </li>
+        <li>
+            <figure class="nug-photo">
+                <img src="resources/img/7.jpg" alt="Nug">
+            </figure>
+        </li>
+        <li>
+            <figure class="nug-photo">
+                <img src="resources/img/8.jpg" alt="Nug">
+            </figure>
+        </li>
+    </ul>
+</section>
+
+
+<section class="section-steps" id="works">
+    <div class="row">
+        <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-2 steps-box app-iPhone">
+            <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen">
+        </div>
+        <div class="col span-1-of-2 steps-box">
+            <div class="works-step">
+                <div>1</div>
+                <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+            </div>
+            <div class="works-step">
+                <div>2</div>
+                <p>Order your dank weed using our mobile app or website. Or you can even call us!</p>
+            </div>
+            <div class="works-step">
+                <div>3</div>
+                <p>Enjoy your weed after less than 20 minutes. See you the next time!</p>
+            </div>
+
+            <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt="App Store Button"></a>
+            <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Play Store Button"></a>
+        </div>
+    </div>
+</section>
+
+<section class="section-cities" id="cities">
+    <div class="row">
+        <h2>We're currently in these cities</h2>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4 box">
+            <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
+            <h3>Lisbon</h3>
+            <div class="city-feature">
+                <i class="ion-ios-person icon-small"></i>
+                1600+ happy smokers
+            </div>
+            <div class="city-feature">
+                <i class="ion-ios-star icon-small"></i>
+                60+ top growers
+            </div>
+            <div class="city-feature">
+                <i class="ion-social-twitter icon-small"></i>
+                <a href="#">@@herbandelivery_lx</a>
+            </div>
+        </div>
+        <div class="col span-1-of-4 box">
+            <img src="resources/img/san-francisco.jpg" alt="San Francisco">
+            <h3>San Francisco</h3>
+            <div class="city-feature">
+                <i class="ion-ios-person icon-small"></i>
+                3700+ happy smokers
+            </div>
+            <div class="city-feature">
+                <i class="ion-ios-star icon-small"></i>
+                160+ top growers
+            </div>
+            <div class="city-feature">
+                <i class="ion-social-twitter icon-small"></i>
+                <a href="#">@@herbandelivery_sf</a>
+            </div>
+        </div>
+        <div class="col span-1-of-4 box">
+            <img src="resources/img/berlin.jpg" alt="Berlin">
+            <h3>Berlin</h3>
+            <div class="city-feature">
+                <i class="ion-ios-person icon-small"></i>
+                2300+ happy smokers
+            </div>
+            <div class="city-feature">
+                <i class="ion-ios-star icon-small"></i>
+                110+ top growers
+            </div>
+            <div class="city-feature">
+                <i class="ion-social-twitter icon-small"></i>
+                <a href="#">@@herbandelivery_berlin</a>
+            </div>
+        </div>
+        <div class="col span-1-of-4 box">
+            <img src="resources/img/london.jpg" alt="London">
+            <h3>London</h3>
+            <div class="city-feature">
+                <i class="ion-ios-person icon-small"></i>
+                1200+ happy smokers
+            </div>
+            <div class="city-feature">
+                <i class="ion-ios-star icon-small"></i>
+                50+ top growers
+            </div>
+            <div class="city-feature">
+                <i class="ion-social-twitter icon-small"></i>
+                <a href="#">@@herbandelivery_uk</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-testimonials">
+    <div class="row">
+        <h2>Our customers can't live without us</h2>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-3">
+            <blockquote>
+                Herban Delivery is just awesome! I just launched a startup which leaves me with no time for picking
+                up nug, so
+                Herban Delivery is a life-saver. Now that I got used to it, I couldn't live without my daily nug!
+                <cite><img src="resources/img/customer-1.jpg">Alberto Duncan</cite>
+            </blockquote>
+        </div>
+        <div class="col span-1-of-3">
+            <blockquote>
+                Inexpensive, healthy and great-tasting meds, delivered right to my home. We have lots of weed
+                delivery here in Lisbon, but no one comes even close to Herban Delivery. Me and my family are so in
+                love!
+                <cite><img src="resources/img/customer-2.jpg">Joana Silva</cite>
+            </blockquote>
+        </div>
+        <div class="col span-1-of-3">
+            <blockquote>
+                I was looking for a quick and easy weed delivery service in San Franciso. I tried a lot of them and
+                ended up with Herban Delivery. Best weed delivery service in the Bay Area. Keep up the great work!
+                <cite><img src="resources/img/customer-3.jpg">Milton Chapman</cite>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-plans js--section-plans" id="plans">
+    <div class="row">
+        <h2>Start smoking today</h2>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-3 plan">
+            <div class="plan-box">
+                <div>
+                    <h3><b>Premium</b></h3>
+                    <p class="plan-price">$399 <span>/month</span></p>
+                    <p class="plan-price-gram">That's only $6.65 per gram!</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><i class="ion-ios-checkmark-empty icon-small"></i>2 grams every day</li>
+                        <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                        <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to private reserve</li>
+                        <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                    </ul>
+                </div>
+                <div>
+                    <form asp-action="Premium" asp-controller="Home" method="post">
+                        <input type="submit" value="Sign up now">
+                    </form>
+                    <!-- <a href="#form" class="btn btn-full">Sign up now</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="col span-1-of-3 plan">
+            <div class="plan-box">
+                <div>
+                    <h3>Pro</h3>
+                    <p class="plan-price">$149 <span>/month</span></p>
+                    <p class="plan-price-gram">That's only $7.45 per gram!</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><i class="ion-ios-checkmark-empty icon-small"></i>2 grams 10 days/month</li>
+                        <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                        <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to top shelf</li>
+                        <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                    </ul>
+                </div>
+                <div>
+                    <form asp-action="Pro" asp-controller="Home" method="post">
+                        <input type="submit" value="Sign up now">
+                    </form>
+                    <!-- <a href="#form" class="btn btn-ghost">Sign up now</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="col span-1-of-3 plan">
+            <div class="plan-box">
+                <div>
+                    <h3>Schwag Package</h3>
+                    <p class="plan-price">$19 <span>/4 grams</span></p>
+                    <p class="plan-price-gram">That's only $4.75 per gram!</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><i class="ion-ios-checkmark-empty icon-small"></i>4 grams of schwag</li>
+                        <li><i class="ion-ios-checkmark-empty icon-small"></i>Order from 8am to 12pm</li>
+                        <li><i class="ion-ios-close-empty icon-small"></i>Access to top shelf</li>
+                        <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                    </ul>
+                </div>
+                <div>
+                    <form asp-action="Schwag" asp-controller="Home" method="post">
+                        <input type="submit" value="Sign up now">
+                    </form>
+                    <!-- <a href="#form" class="btn btn-ghost">Sign up now</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-form js--section-form" id="form">
+    <div class="row">
+        <h2>We're happy to have you join</h2>
+    </div>
+    <div class="row">
+        <p id="get-medicated">
+            Already registered? <a href="#login" class="btn btn-full">Get medicated now</a>
+        </p>
+        <br>
+        <form asp-action="Registration" asp-controller="Home" method="post" class="contact-form">
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label asp-for="FirstName"></label>
+                    <span class="validation-errors" asp-validation-for="FirstName"></span>
+                </div>
+                <div class="col span-2-of-3">
+                    <input asp-for="FirstName" id="firstname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label asp-for="LastName"></label>
+                    <span class="validation-errors" asp-validation-for="LastName"></span>
+                </div>
+                <div class="col span-2-of-3">
+                    <input asp-for="LastName" id="lastname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label asp-for="Email">Email</label>
+                    <span class="validation-errors" asp-validation-for="Email"></span>
+                </div>
+                <div class="col span-2-of-3">
+                    <input asp-for="Email" id="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label asp-for="Password"></label>
+                    <span class="validation-errors" asp-validation-for="Password"></span>
+                </div>
+                <div class="col span-2-of-3">
+                    <input asp-for="Password" id="password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label asp-for="PasswordConfirm"></label>
+                    <span class="validation-errors" asp-validation-for="PasswordConfirm"></span>
+                </div>
+                <div class="col span-2-of-3">
+                    <input asp-for="PasswordConfirm" id="passwordconfirm">
+                </div>
+            </div>
+            <input type="hidden" asp-for="SubscriptionPlan" id="subscriptionplan" value="@ViewBag.Plan">
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="submit" value="Sign up!">
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+<section class="section-login js--section-login" id="login">
+    <div class="row">
+        <h2>Login and start getting medicated</h2>
+    </div>
+    <div class="row">
+        <form asp-action="Login" asp-controller="Home" method="post" class="contact-form">
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label asp-for="LoginEmail">Email</label>
+                    <span class="validation-errors" asp-validation-for="LoginEmail"></span>
+                </div>
+                <div class="col span-2-of-3">
+                    <input asp-for="LoginEmail" id="loginemail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label asp-for="LoginPassword"></label>
+                    <span class="validation-errors" asp-validation-for="LoginPassword"></span>
+                </div>
+                <div class="col span-2-of-3">
+                    <input asp-for="LoginPassword" id="loginpassword">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="submit" value="Login!">
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+<footer>
+    <div class="row">
+        <div class="col span-1-of-2">
+            <ul class="footer-nav">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">iOS App</a></li>
+                <li><a href="#">Android App</a></li>
+            </ul>
+        </div>
+        <div class="col span-1-of-2">
+            <ul class="social-links">
+                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <p>
+            Copyright &copy; 2020 by Herban Delivery. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+<script src="resources/js/script.js"></script>
+
+<!-- Maintain page scroll position after validation errors -->
+<script>
+    $(document).ready(function () {
+        var JumpTo = '@ViewBag.JumpToId';
+        if (JumpTo != "") {
+            $(this).scrollTop($('#' + JumpTo).position().top);
+        }
+    });
+</script>
